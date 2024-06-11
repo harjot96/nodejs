@@ -1,0 +1,28 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.main-header{
+width: '100%';
+height: 3.5rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: center;
+background-color: rgb(19 120 52);
+}
+.main-header_nav{
+align-items:'center';
+}
+.main-header_item-list{
+display: flex;
+flex-direction: row; /* Can be column for vertical alignment */
+justify-content: space-around; /* Adjust according to your layout needs */
+align-items: center; /* Aligns items vertically in the center */
+list-style-type: none; /* Removes the default list styling */
+padding: 0; /* Removes default padding */
+margin: 0;
+}
+.main-header_item-list{
+text-decoration: none;
+}

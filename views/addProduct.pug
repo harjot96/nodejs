@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+    body 
+                header.main-header
+                      nav.main-header_nav
+                         ul.main-header_item-list
+                            li
+                              a(href="/") Shop
+                               li
+                              a(href="/admin/add-product") Add Product         
+main
+    h4 Add Details
+    form(action="/admin/add-prodcut",method='POST')
+        label(for="title") Title
+        input(type="text",name="title",placeholder="Add Item Name")
+    button(type="submit")  Add Product
+
+
+
+
+//- <html lang="en">
+//- <head>
+//-     <meta charset="UTF-8">
+//-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//-     <title>Add Product</title>
+//-     <link rel="stylesheet" href="/css/main.css">
+//- </head>
+
+//- <body>
+//-     <header class="main-header">
+//-         <nav class="main-header_nav">
+//-             <ul class="main-header_item-list">
+//-                 <li><a href="/">Shop</a></li>
+//-                 <li>Cart</li>
+//-                 <li><a href="/admin/add-product">Add Product</a></li>
+
+//-             </ul>
+//-         </nav>
+//-     </header>
+//-     <main>
+//-         <form action="/admin/add-product" method="POST">
+//-             <input type="text" name="name" placeholder="Name">
+//-             <button type="submit">Submit</button>
+//-         </form>
+//-     </main>
+//- </body>
+//- </html>
