@@ -3,16 +3,16 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{pageTitle}
+        title My Shop
         link(rel="stylesheet", href="/css/main.css")
     body 
-                header.main-header
-                      nav.main-header_nav
-                         ul.main-header_item-list
-                            li
-                              a(href="/") Shop
-                               li
-                              a(href="/admin/add-product") Add Product         
+        header.main-header
+                nav.main-header__nav
+                        ul.main-header__item-list.a
+                                li
+                                        a.active(href="/") Shop
+                                            li 
+                                                a(href="/admin/add-product") Add Products      
 main
     h4 Add Details
     form(action="/admin/add-prodcut",method='POST')
